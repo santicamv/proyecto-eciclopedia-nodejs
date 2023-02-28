@@ -1,0 +1,28 @@
+{
+  "name": "proyecto-enciclopedia-nodejs",
+  "version": "1.0.0",
+  "description": "Proyecto con la enciclopedia.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santicamv/proyecto-enciclopedia-nodejs.git"
+  },
+  "author": "Santiago Camacho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santicamv/proyecto-enciclopedia-nodejs/issues"
+  },
+  "homepage": "https://github.com/santicamv/proyecto-enciclopedia-nodejs#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

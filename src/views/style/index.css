@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+  }
+  
+  nav {
+    position: fixed;
+    display: flex;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    background-color: white;
+    transition: .50s ease-in-out;
+  }
+  
+  .logo-p{
+    width: 180px;
+    height: 70px;
+    cursor: pointer;
+  }
+  
+  nav:hover{
+    top: 0;
+    opacity: 1;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: .2em 2em;
+    float: right;
+    align-items: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0;
+    padding: .2em .7em;
+  }
+  
+  nav a {
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 166, 0);
+    text-decoration: none;
+    font-family: Ubuntu;
+    font-size: 1.39em;
+    font-weight: normal;
+    letter-spacing: 1px;
+    transition: .25s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+  }
+  
+  .nav-bg {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgb(50, 50, 50);
+    transition: .45s ease-in-out;
+  }
+  
+  .bg-hidden {
+    top: -100%;
+    opacity: 0;
+  }
+  
+  .bg-visible {
+    top: 0;
+    opacity: 1;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: Ubuntu;
+    letter-spacing: 1px;
+  }
+  
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background: rgb(50, 50, 50);
+    background: url(https://images.hdqwalls.com/download/ultimate-supercars-k6-2560x1440.jpg) no-repeat 50% 270% fixed;
+    background-size: 100%;
+    overflow: hidden;
+  }
+  
+  .hero h1 {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    width: 100%;
+    padding: .3em;
+    font-size: 4em;
+    font-weight: bolder;
+  }
+  
+  .content-wrapper {
+    width: 80%;
+    height: auto;
+    padding: 1em 10%;
+  }
+  
+  .content-wrapper h1 {
+    margin: 0;
+    padding-top: 26px;
+    color: rgb(220, 120, 0);
+  }
+  
+  .content-wrapper h2 {
+    padding-top: 26px;
+    margin: 0;
+    color: rgb(220, 120, 0);
+    text-align: center;
+  }
+  
+  .content-wrapper p {
+    font-family: "Open Sans";
+    text-indent: 0em;
+  }
+  
+  .titulo-marcas{
+    padding-bottom: 35px;
+  }
+  
+  .tabla-marcas{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(170px, auto);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .tabla-marcas img{
+    width: 11em;
+    height: 7em;
+  }
+
+  #seleccionar-marca {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+
+
+
+.footer-distributed {
+  background-color: #474747;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.logo-footer{
+  width: 35px;
+  height:35px;
+}
+
+.footer-distributed .footer-left p {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 166, 0);
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
